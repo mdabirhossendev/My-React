@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@utility container{
+    @apply mx-auto
+}
+@theme {
+  --font-oswald: "oswald", sans-serif;
+} 
