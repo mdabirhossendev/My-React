@@ -4,6 +4,7 @@ import Image from '../ui/Image'
 import logo from "../../assets/logo.png"
 import Ancor from '../ui/Ancor'
 import menuData from '../../dammyData/menudata'
+import PrimaryButton from '../ui/PrimaryButton'
 
 const NavBer = () => {
 
@@ -18,9 +19,9 @@ const NavBer = () => {
             </div>
             <div>
               <ul className='flex gap-7.5 '>
-                {menuData.map((item)=>(
-                <li key={item.id}>
-                  <Ancor  href={item.href} text={item.label}  className='font-semibold text-sm leading-7 text-[#161C2D]' />
+                {menuData.map((item, index)=>(
+                <li key={index}>
+                  <Ancor  href={item.href} text={item.label}  className='font-semibold text-sm leading-7 text-[#161C2D] hover:text-Primary transition all duration-300' />
                 </li>
                 ))
                 }
@@ -29,10 +30,10 @@ const NavBer = () => {
             <div className='flex gap-4.75'>
               <div className='text-center' >
                 <p>Need Help?</p>
-                <h5><i class="fa-solid fa-phone"></i>
+                <h5><i className="fa-solid fa-phone"></i>
                   +1 5000 6000</h5>
               </div>
-              <button className='text-[#FFFFFF] font-bold hover:bg-transparent hover:text-black duration-300 hover:border-black border-2 cursor-pointer py-2 px-4.75 bg-[#48B1FB] rounded-[30px] font-[Quicksand]'>Book Service Now</button>
+              <PrimaryButton text="Book Service Now" className="font-[Quicksand] bg-Primary text-[#FFFFFF] hover:text-black hover:bg-transparent hover:border-2 border-2 hover:border-black transition all duration-300 hover:scale-105" />
             </div>
           </div>
         </Container>

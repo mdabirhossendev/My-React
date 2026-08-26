@@ -5,32 +5,32 @@ let menuData = [
       href:"/"
     },
     {
-      id:1,
+      id:2,
       label:"Services",
       href:"/Services"
     },
     {
-      id:1,
+      id:3,
       label:"How It Works",
       href:"/How It Works"
     },
     {
-      id:1,
+      id:4,
       label:"About",
       href:"/About"
     },
     {
-      id:1,
+      id:5,
       label:"Projects",
       href:"/Projects"
     },
     {
-      id:1,
+      id:6,
       label:"Blog",
       href:"/Blog"
     },
     {
-      id:1,
+      id:7,
       label:"Contact",
       href:"/Contact"
     }
