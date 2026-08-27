@@ -21,7 +21,7 @@ const NavBer = () => {
               <ul className='flex gap-7.5 '>
                 {menuData.map((item, index)=>(
                 <li key={index}>
-                  <Ancor  href={item.href} text={item.label}  className='font-semibold text-sm leading-7 text-[#161C2D] hover:text-Primary transition all duration-300' />
+                  <Ancor  href={item.href} text={item.label}  className='font-semibold text-sm leading-7 text-[#161C2D] hover:text-Primary transition all duration-300 relative after:content-[""] after:absolute after:w-0 after:h-0.5 after:bg-green-500 after:-bottom-0.75 after:left-1/2 after:-translate-x-1/2 after:duration-300 hover:after:w-full' />
                 </li>
                 ))
                 }
