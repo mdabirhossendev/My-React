@@ -5,6 +5,8 @@ import logo from "../../assets/logo.png"
 import Ancor from '../ui/Ancor'
 import menuData from '../../dammyData/menudata'
 import PrimaryButton from '../ui/PrimaryButton'
+import { FaPhone } from "react-icons/fa";
+
 
 const NavBer = () => {
 
@@ -20,7 +22,7 @@ const NavBer = () => {
             <div>
               <ul className='flex gap-7.5 '>
                 {menuData.map((item, index)=>(
-                <li key={index}>
+                <li key={item.id}>
                   <Ancor  href={item.href} text={item.label}  className='font-semibold text-sm leading-7 text-[#161C2D] hover:text-Primary transition all duration-300 relative after:content-[""] after:absolute after:w-0 after:h-0.5 after:bg-green-500 after:-bottom-0.75 after:left-1/2 after:-translate-x-1/2 after:duration-300 hover:after:w-full' />
                 </li>
                 ))
@@ -29,11 +31,13 @@ const NavBer = () => {
             </div>
             <div className='flex gap-4.75'>
               <div className='text-center' >
-                <p>Need Help?</p>
-                <h5><i className="fa-solid fa-phone"></i>
-                  +1 5000 6000</h5>
+                <Ancor className='font-normal font-Quicksand text-[12px] leading-5 text-[#707070]' text="Need Help?" href='#'/>
+                <div className='flex items-center gap-2'>
+                  <FaPhone className='text-primary' />
+                  <Ancor href='#' text="+1 5000 6000"/>
+                </div>
               </div>
-              <PrimaryButton text="Book Service Now" className="font-[Quicksand] bg-Primary text-[#FFFFFF] hover:text-black hover:bg-transparent hover:border-2 border-2 hover:border-black transition all duration-300 hover:scale-105" />
+              <PrimaryButton text="Book Service Now" className="font-[Quicksand] bg-primary text-[#FFFFFF] hover:text-black hover:bg-transparent hover:border-2 border-2 hover:border-black transition all duration-300 hover:scale-105" />
             </div>
           </div>
         </Container>

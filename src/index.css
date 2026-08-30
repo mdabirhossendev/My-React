@@ -4,12 +4,17 @@
     @apply mx-auto
 } */
 @theme {
-  --font-oswald: "oswald", sans-serif;
-  --font-Quicksand: "Quicksand", sans-serif;
-  --font-opensans: "Open Sans", sans-serif;
+    /* ===========Font start here============= */
+    --font-Quicksand: "Quicksand", sans-serif;
+    --font-oswald: "oswald", sans-serif;
+    --font-opensans: "Open Sans", sans-serif;
+    /* ===========Font end here============= */
+    
 
-  --color-Primary: #48B1FB;
-  
+   /* ===========Color start here============= */
+   --color-primary: #48B1FB;
+   /* ===========Color end here============= */
+   
 ;
   
 } 
