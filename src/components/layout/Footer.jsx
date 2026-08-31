@@ -38,17 +38,19 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4>Our Services</h4>
-            <ul>
+            <h4  className='text-lg text-white/75 leading-7 font-semibold font-Quicksand '>Our Services</h4>
+            <ul className='flex flex-col gap-2.25 mt-5 ' >
               {
                 FooterServices.map((item,index)=>(
               <li className='text-white/75' key={item.id}>
                 <Ancor text={item.label} href={item.href}/>
               </li>
-
                 ))
               }
             </ul>
+          </div>
+          <div>
+            
           </div>
         </div>
       </div>

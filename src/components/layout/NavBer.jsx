@@ -13,9 +13,10 @@ const NavBer = () => {
 
   return (
     <>
-      <nav className='py-3.5'>
+      <nav className='fixed top-0 left-0 w-full z-50 bg-white px-6 py-4 shadow-sm'>
         <Container>
-          <div className='flex items-center justify-between '>
+         <div className=''>
+           <div className='flex items-center justify-between '>
             <div>
               <Image sourch={logo} alt="Not Found " />
             </div>
@@ -37,9 +38,10 @@ const NavBer = () => {
                   <Ancor href='#' text="+1 5000 6000"/>
                 </div>
               </div>
-              <PrimaryButton text="Book Service Now" className="font-[Quicksand] bg-primary text-[#FFFFFF] hover:text-black hover:bg-transparent hover:border-2 border-2 hover:border-black transition all duration-300 hover:scale-105" />
+              <PrimaryButton text="Book Service Now" className="font-[Quicksand]  bg-primary text-[#FFFFFF]" />
             </div>
           </div>
+         </div>
         </Container>
       </nav>
     </>
