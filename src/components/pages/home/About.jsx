@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section className='bg-[#0A3F87] py-25'>
       <div className="container">
-        <div className="flex items-center gap-18.5">
+        <div className="flex items-center gap-18.5 pb-25">
           <div>
             <MiniLink href='#' className="text-white bg-white/15" text="About Uclean" />
             <h2 className='mt-4.25 w-133.25 tracking-[-1.2px] text-white text-[48px] font-semibold font-Quicksand leading-14.4'>Bringing Clean, Comfort, and Care Together</h2>
@@ -24,6 +24,11 @@ const About = () => {
             <Image sourch={AboutImg2}/>
 
           </div>
+        </div>
+         <div className='text-center flex flex-col items-center pt-1 pb-25'>
+          <MiniLink text="Our Services" className="text-white"/>
+          <h2 className='font-semibold font-Quicksand text-white text-[48px] leading-[57.6px]'>Our Cleaning Services</h2>
+          <Paragraph className="w-148.5 text-white/75 text-4 font-normal font-opensans leading-8 " text="Whether it's a quick refresh or a deep clean transformation, our expert touch leaves your home or office shining."/>
         </div>
       </div>
     </section>

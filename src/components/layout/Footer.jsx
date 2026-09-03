@@ -22,7 +22,9 @@ const Footer = () => {
             <div className='flex mt-7.5 text-white/75 gap-7'>
               {
                 iconData.map((item, index)=>(
-                  <Ancor className='text-xl' href={item.url}  text={item.icon} />
+                <div key={index}>
+                    <Ancor className='text-xl' href={item.url}  text={item.icon} />
+                </div>
                   
                 ))
               }
@@ -57,7 +59,7 @@ const Footer = () => {
             <div className='flex flex-col gap-6'>
               {
                 footerInfo.map((item,index)=>(
-                  <div key={item.id}>
+                  <div key={index}>
                     <div>
                       <div className='flex items-center gap-2'>
                       <div className='[&>svg]:text-[#FEE74A]'>
