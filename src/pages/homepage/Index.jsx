@@ -5,7 +5,7 @@ import Banner from '../../components/pages/home/Banner'
 import About from '../../components/pages/home/About'
 import Service from '../../components/pages/home/Service'
 
-const Index = () => {
+const HomeIndex = () => {
     return (
         <>
         <NavBer/>
@@ -17,4 +17,4 @@ const Index = () => {
     )
 }
 
-export default Index
+export default HomeIndex

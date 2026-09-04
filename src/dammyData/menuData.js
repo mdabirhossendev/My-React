@@ -6,7 +6,7 @@ let menuData = [
     },
     {
       id:2,
-      label:"Services",
+      label:"services",
       href:"/Services"
     },
     {
@@ -17,7 +17,7 @@ let menuData = [
     {
       id:4,
       label:"About",
-      href:"/About"
+      href:"/about"
     },
     {
       id:5,
