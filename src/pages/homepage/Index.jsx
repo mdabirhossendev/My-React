@@ -8,11 +8,9 @@ import Service from '../../components/pages/home/Service'
 const HomeIndex = () => {
     return (
         <>
-        <NavBer/>
         <Banner/>
         <About/>
         <Service/>
-        <Footer/>
         </>
     )
 }

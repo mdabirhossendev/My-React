@@ -4,6 +4,9 @@ import AboutIndex from "./pages/AboutPage/AboutIndex"
 import ServiceIndex from "./pages/ServicePage/ServiceIndex"
 import BlogIndex from "./pages/Blogpage/BlogIndex"
 import RootLayout from "./components/layout/RootLayout"
+import RootError from "./components/common/RootError"
+import DashBoradLayout from "./components/layout/DashBoradLayout"
+import Dashboard from "./pages/Dashboard"
 
 // const routes = createRoutesFromElements(
 //   <>
@@ -28,7 +31,17 @@ import RootLayout from "./components/layout/RootLayout"
 
 
 
-const routes = createRoutesFromElements(
+// const routes = createRoutesFromElements(
+//   <>
+//       <Route element={<RootLayout />}>
+//         <Route path="/" element={<HomeIndex />} />
+//         <Route path="/about" element={<AboutIndex />} />
+//         <Route path="/services" element={<ServiceIndex />} />
+//         <Route path="/blog" element={<BlogIndex />} />
+//     </Route>
+//   </>
+// );
+const router = createBrowserRouter(createRoutesFromElements(
   <>
       <Route element={<RootLayout />}>
         <Route path="/" element={<HomeIndex />} />
@@ -36,9 +49,12 @@ const routes = createRoutesFromElements(
         <Route path="/services" element={<ServiceIndex />} />
         <Route path="/blog" element={<BlogIndex />} />
     </Route>
+    <Route element={<DashBoradLayout/>}>
+      <Route path="/dashboard" element ={<Dashboard/>}/>
+    </Route>
+         <Route path="/*" element={<RootError/>}/>
   </>
-);
-const router = createBrowserRouter(routes);
+));
 
 function App() {
 
